@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-density="comfortable">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corelytic LaunchFlow is an offline-first campaign approval and delivery operations system for managing launch readiness, revisions, approvals, blockers, delivery control, and rule-based launch risk detection.">
+  <title>Corelytic LaunchFlow | Campaign Approval & Delivery Operations System</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23b75a2a'/%3E%3Ctext x='50%25' y='57%25' text-anchor='middle' font-size='28' font-family='Segoe UI, Arial, sans-serif' fill='white'%3ECL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div>
+        <div class="brand-card">
+          <div class="brand-mark">CL</div>
+          <div>
+            <h1>Corelytic LaunchFlow</h1>
+            <p>Campaign Approval & Delivery Operations System</p>
+          </div>
+        </div>
+        <nav class="nav-list" id="sidebar-nav">
+          <button class="nav-item active" data-route="dashboard">Dashboard</button>
+          <button class="nav-item" data-route="campaigns">Campaigns</button>
+          <button class="nav-item" data-route="matrix">Launch Matrix</button>
+          <button class="nav-item" data-route="revisions">Revisions</button>
+          <button class="nav-item" data-route="approvals">Client Approval Room</button>
+          <button class="nav-item" data-route="launchbrain">LaunchBrain</button>
+          <button class="nav-item" data-route="delivery">Delivery Center</button>
+          <button class="nav-item" data-route="timeline">Timeline</button>
+          <button class="nav-item" data-route="reports">Reports</button>
+          <button class="nav-item" data-route="settings">Settings / Backup</button>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <div class="status-note">
+          <strong>Offline-first</strong>
+          <span>Rule-based intelligence, workspace automations, and local backup control.</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Launch Operations Command Center</p>
+          <h2 id="route-title">Dashboard</h2>
+        </div>
+        <div class="topbar-actions">
+          <button class="ghost-btn" data-action="run-launchbrain">Run LaunchBrain Scan</button>
+          <button class="ghost-btn" data-action="run-launch-simulation">Run Launch Simulation</button>
+          <button class="primary-btn" data-action="open-campaign-modal">New Campaign</button>
+        </div>
+      </header>
+
+      <section id="global-alert-strip"></section>
+      <section id="app-view" class="view-root"></section>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-stack" aria-live="polite"></div>
+  <input type="file" id="import-input" accept="application/json" hidden>
+
+  <script src="assets/js/state.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/seed-data.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/launchbrain.js"></script>
+  <script src="assets/js/automations.js"></script>
+  <script src="assets/js/campaigns.js"></script>
+  <script src="assets/js/approvals.js"></script>
+  <script src="assets/js/revisions.js"></script>
+  <script src="assets/js/delivery.js"></script>
+  <script src="assets/js/reports.js"></script>
+  <script src="assets/js/exports.js"></script>
+  <script src="assets/js/qa-guard.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

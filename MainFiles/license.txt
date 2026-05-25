@@ -1,0 +1,8 @@
+Corelytic LaunchFlow | Buyer License Notes
+
+- This package is provided for standard end-user use in permitted buyer projects and internal operational workflows.
+- Redistribution, resale as a source package, or claiming authorship of the original package is not permitted.
+- The buyer package has no external API dependency and does not require any third-party SaaS connection to function.
+- The product is built with HTML5, CSS3, Vanilla JavaScript, and browser LocalStorage.
+- Bundled marketplace graphics and screenshots are included for this product release package only.
+- No backend framework license or package manager dependency license is required to run this release.
